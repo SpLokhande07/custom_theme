@@ -1,0 +1,65 @@
+name: custom_theme
+description: A comprehensive, responsive design system for Flutter web applications.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Responsive framework for better responsive design
+  responsive_framework: ^1.1.1
+  
+  # Screen utilities for responsive design
+  flutter_screenutil: ^5.9.0
+  
+  # SVG support for vector graphics
+  flutter_svg: ^2.0.9
+  
+  # State management (optional)
+  provider: ^6.0.5
+  
+  # Useful utilities
+  collection: ^1.17.0
+  
+  # HTTP client for image loading
+  http: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Add custom fonts here
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+    
+    - family: Roboto Mono
+      fonts:
+        - asset: assets/fonts/RobotoMono-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/RobotoMono-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/RobotoMono-Bold.ttf
+          weight: 700
+
+  # Add assets here
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/svg/
